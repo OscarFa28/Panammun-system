@@ -1,0 +1,197 @@
+body{
+    background-color: #1c1c1c;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #1c1c1c 40px ), repeating-linear-gradient( #a1203f55, #a1203f );
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    padding: 0;
+    margin: 0;
+    font-family: 'Expletus Sans', sans-serif;
+    color: var(--bg-100);
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--neutral-200);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-100);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent-100);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--accent-100);
+}
+h1{
+    color: var(--accent-100);
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.developers{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.developer-div{
+    background-color: rgba(0, 0, 0, 0.3); /* Gris claro con 20% de opacidad */
+    backdrop-filter: blur(7px);
+    border-radius: 1em;
+    border: none;
+    display: flex;
+    margin: 1.5em 10%;
+    transition: .5s;
+}
+.developer-div-r{
+    background-color: rgba(0, 0, 0, 0.3); /* Gris claro con 20% de opacidad */
+    backdrop-filter: blur(7px);
+    border-radius: 1em;
+    border: none;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1.5em 10%;
+    transition: .5s;
+}
+.developer-div:hover h2{
+    color: var(--accent-100) !important;
+}
+
+.developer-div-r:hover h2{
+    color: var(--accent-100) !important;
+}
+.developer-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    padding: 1em;
+}
+.developer-info h2{
+    font-size: 2.5em;
+    margin: 0;
+    margin-bottom: 2em;
+    text-align: center;
+    transition: .5s;
+}
+.study-info{
+    font-size: 1.2em;
+    text-align: center;
+}
+.links{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.links a{
+    display: flex;
+    padding: .3em .6em;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-100);
+    border-left: 2px solid var(--accent-100);
+    border-right: 2px solid var(--accent-100);
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+    transition: .5s;
+}
+.linked:hover{
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #096bcd;
+    border-bottom-color: #096bcd;
+    color: #096bcd !important;
+    transform: translateY(-0.5em);
+}
+.instagram:hover{
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #E1306C;
+    border-bottom-color: #E1306C;
+    color: #E1306C !important;
+    transform: translateY(-0.5em);
+}
+.github:hover{
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #2d3451;
+    border-bottom-color: #2d3451;
+    color: #2d3451 !important;
+    transform: translateY(-0.5em);
+}
+.links i{
+    margin-right: .5em;
+}
+.links span{
+    font-weight: 600;
+}
+.developer-div .developer-image{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 25%;
+}
+.developer-div-r .developer-image{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    width: 25%;
+}
+.developer-image img{
+    width: 120%;
+    height: 110%;
+    border-radius: 1em;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 0;
+    margin-top: 3em;
+}
+footer span{
+    margin: 0 5%;
+}
+footer span a{
+    text-decoration: none;
+    color: var(--accent-200);
+    font-weight: 600;
+    transition: .5s;
+}
+footer span a:hover{
+    color: var(--bg-100);
+}
+@media only screen and (max-width: 800px) {
+    .developer-div, .developer-div-r{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2em 5%;
+    }
+    .developer-info h2{
+        font-size: 1.5em;
+    }
+    .links{
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+    .developer-image{
+        width: 100% !important;
+    }
+    .developer-image img{
+        width: 100%;
+        height: 100%;
+        border-radius: 1em;
+    }
+    footer span{
+        margin: 0 2%;
+    }
+}

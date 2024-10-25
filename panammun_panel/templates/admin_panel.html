@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- CSS files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'panammun_panel/css/color_palette.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'panammun_panel/css/admin_panel.css' %}">
+    <!-- Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+    </style>
+    <!-- Íconos-->
+    <script src="https://kit.fontawesome.com/c986eafe9b.js" crossorigin="anonymous"></script>
+    <!-- Ícono -->
+    <link rel="icon" type="image/png" href="{% static 'panammun_panel/svg/icon_panammun.svg' %}">
+</head>
+<body>
+    <header class="main-title">
+        <a href="/admin/" title="Más opciones"><i class="fa-solid fa-gear"></i></a>
+        <h1>Administración Panammun</h1>
+        <a href="#" onclick="document.getElementById('logout-form').submit();" title="Cerrar Sesión">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </a>
+        <form id="logout-form" method="post" action="{% url 'logout' %}" style="display: none;">
+            {% csrf_token %}
+        </form>
+    </header>
+    <div class="main-info">
+        <div class="info-sections">
+            <div class="info">
+                <span class="title-section">Edición de Panammun</span>
+                <span>{{ current_edition.name }}</span>
+            </div>
+            <div class="info">
+                <span class="title-section">Comités</span>
+                <span>{{ committee_count }}</span>
+            </div>
+            <div class="info">
+                <span class="title-section">Participantes</span>
+                <span>{{ no_users }}</span>
+            </div>
+        </div>
+    </div>
+    <section class="approve-users-list">
+        <div class="approve">
+            <h3>Lista de usuarios</h3>
+            <ul>
+                {% for user in users %}
+                    <li>
+                        <span>{{ user.last_name }}</span>
+                        <span>{{ user.first_name }}</span>
+                        <span class="extra-inf">{{ user.phone_number }}</span>
+                        <span class="extra-inf">{{ user.email }}</span>
+                        <form action="{% url 'panammun_panel:update-user-api' %}" method="post" class="user-change">
+                            {% csrf_token %}
+                            {% if user.voucher and user.voucher.url %}
+                            <button class="show-voucher" type="button" onclick="showVoucher('{{ user.voucher.url|escapejs }}')">Comprobante</button>
+                            {% else %}
+                                <button disabled class="show-voucher">No hay Voucher disponible</button>
+                            {% endif %}
+                            <select id="verified" name="verified" required>
+                                <option value="0" {% if not user.verified %}selected{% endif %}>Desactivado</option>
+                                <option value="1" {% if user.verified %}selected{% endif %}>Verificado</option>
+                            </select>
+                            <input type="hidden" name="id" value="{{ user.id }}">
+                            <button type="submit" class="update-button">Actualizar</button>
+                        </form>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+    <section class="main-users-list">
+        <div class="distribution">
+            
+            <h3>Distribución</h3>
+            {% for committee, users_c in committee_users.items %}
+            <ul>
+                <h5>{{ committee.name }}</h5>
+                {% for user in users_c %}
+                    <li>
+                        <span>{{ user.last_name }}</span>
+                        <span>{{ user.first_name }}</span>
+                        <span class="extra-inf">{{ user.phone_number }}</span>
+                        <span class="extra-inf">{{ user.email }}</span>
+                        <span class="extra-inf">{{ user.username }}</span>
+                        <span class="country">{{ user.country.name }}</span>
+                    </li>
+                {% empty %}
+                    <li>No users found.</li>
+                {% endfor %}
+            </ul>
+        {% empty %}
+            <p>No committees found.</p>
+        {% endfor %}
+        </div>
+    </section>
+    <footer>
+        <span><a href="https://www.up.edu.mx/campus-aguascalientes/">UP Aguascalientes</a></span><span><a href="https://movil.up.edu.mx/ags/ingenieria-en-inteligencia-artificial">Website by IIA UP Ags</a></span>
+    </footer>
+
+</body>
+<!-- JS files -->
+<script src="{% static 'panammun_panel/js/admin_panel.js' %}"></script>
+<script type="text/javascript">
+    window.csrfToken = "{{ csrf_token }}";
+</script>
+
+</html>

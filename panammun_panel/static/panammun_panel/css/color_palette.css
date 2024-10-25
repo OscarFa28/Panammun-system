@@ -1,0 +1,18 @@
+:root {
+  --primary-100: #a1203f; /* Tinto principal */
+  --primary-200: #871832; /* Tinto más oscuro */
+  --primary-300: #6d1027; /* Tinto aún más oscuro */
+  
+  --accent-100: #aba969; /* Dorado principal */
+  --accent-200: #8e8a53; /* Dorado más oscuro */
+  
+  --text-100: #333333; /* Texto oscuro */
+  --text-200: #5c5c5c; /* Texto más claro */
+  
+  --bg-100: #EFEFEF; /* Fondo claro */
+  --bg-200: #e5e5e5; /* Fondo medio */
+  --bg-300: #bdbdbd; /* Fondo más oscuro */
+  
+  --neutral-100: #2b2b2b; /* Negro principal */
+  --neutral-200: #1c1c1c; /* Negro más oscuro */
+}

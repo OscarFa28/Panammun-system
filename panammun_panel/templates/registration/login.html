@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'panammun_panel/css/color_palette.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'panammun_panel/css/login.css' %}">
+    <!-- Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+    </style>
+    <!-- Íconos-->
+    <script src="https://kit.fontawesome.com/c986eafe9b.js" crossorigin="anonymous"></script>
+    <!-- Ícono -->
+    <link rel="icon" type="image/png" href="{% static 'panammun_panel/svg/icon_panammun.svg' %}">
+</head>
+<body>
+    <header class="title-page">
+        <h1>Iniciar Sesión</h1>
+    </header>
+    <section class="login-panel">
+        <div class="panel">
+            <div onclick="redirectToHome()" class="logo-panel">
+                <img src="{% static 'panammun_panel/svg/icon_panammun.svg' %}" alt="">
+            </div>
+            <div class="text-panel">
+                <h2>Panammun</h2>
+            </div>
+            <div class="main-panel">
+                <form method="post">
+                    {% csrf_token %}
+                    
+                    <ul>
+                        <li>
+                            <label for="username">Usuario</label>
+                            <div class="top-input">
+                                <input type="text" name="username" required>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <hr>
+                        </li>
+                        <li>
+                            <label for="username">Contraseña</label>
+                            <div class="top-input">
+                                <input type="password" name="password" required>
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <hr>
+                        </li>
+                    </ul>
+                    <p class="errorM">
+                        {% if form.errors %}
+                            {% for field in form %}
+                                {% for error in field.errors %}
+                                    <span class="error-message">{{ error|escape }}</span>
+                                {% endfor %}
+                            {% endfor %}
+                    
+                            {% for error in form.non_field_errors %}
+                                <span class="error-message">{{ error|escape }}</span>
+                            {% endfor %}
+                        {% endif %}
+                    </p>
+                    <button type="submit">Ingresar</button>
+                </form>
+                <div class="no-account">
+                    <span>¿No tienes cuenta? </span><span><a href="{% url 'panammun_panel:create-account' %}">Regístrate</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span><a href="https://www.up.edu.mx/campus-aguascalientes/">UP Aguascalientes</a></span><span><a href="https://movil.up.edu.mx/ags/ingenieria-en-inteligencia-artificial">Website by IIA UP Ags</a></span>
+    </footer>
+
+</body>
+<!-- JS files -->
+<script src="{% static 'panammun_panel/js/login.js' %}"></script>
+<script>
+    function redirectToHome(){
+        window.location.href = "{% url 'panammun_panel:home' %}";
+    }
+</script>
+</html>

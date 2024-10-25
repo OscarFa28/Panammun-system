@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es"></html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crear Cuenta</title>
+        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- CSS files -->
+        <link rel="stylesheet" type="text/css" href="{% static 'panammun_panel/css/color_palette.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'panammun_panel/css/create_account.css' %}">
+        <!-- Fonts -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+        </style>
+        <!-- Íconos-->
+        <script src="https://kit.fontawesome.com/c986eafe9b.js" crossorigin="anonymous"></script>
+        <!-- Ícono -->
+        <link rel="icon" type="image/png" href="{% static 'panammun_panel/svg/icon_panammun.svg' %}">
+    </head>
+<body>
+    <header class="title-page">
+        <h1>Crear Cuenta</h1>
+    </header>
+    <section class="account_section">
+        <div class="panel">
+            <div onclick="redirectToHome()" class="logo-panel">
+                <img src="{% static 'panammun_panel/svg/icon_panammun.svg' %}" alt="">
+            </div>
+            <div class="text-panel">
+                <h2>Panammun</h2>
+            </div>
+            <div class="main-panel">
+                <form class="main-form" id="user-form" method="post" enctype="multipart/form-data" action="{% url 'panammun_panel:users-api' %}">
+                    {% csrf_token %}
+                    <ul>
+                        <div class="two-inputs">
+                            <li style="margin-right: .5em;">
+                                <label for="full_name">Nombre(s)</label>
+                                <div class="top-input">
+                                    <input type="text" name="first_name" placeholder="Ingresa tu nombre" maxlength="30" required>
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <hr>
+                            </li>
+                            <li style="margin-left: .5em;">
+                                <label for="full_name">Apellidos</label>
+                                <div class="top-input">
+                                    <input type="text" name="last_name" maxlength="50" placeholder="Ingresa tus apellidos" required>
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <hr>
+                            </li>
+                        </div>
+                        <div class="two-inputs">
+                            <li style="margin-right: .5em;">
+                                <label for="username">Nombre de Usuario</label>
+                                <div class="top-input">
+                                    <input type="text" name="username" placeholder="Crea un nombre de usuario" autocomplete="new-username" maxlength="20" required>
+                                    <input type="hidden" name="account_type" value="normal_user">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                </div>
+                                <hr>
+                            </li>
+                            <li style="margin-left: .5em;">
+                                <label for="full_name">Teléfono</label>
+                                <div class="top-input">
+                                    <input type="tel" name="phone_number" maxlength="15" placeholder="Ingresa tu número de telefono" required>
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <hr>
+                            </li>
+                        </div>
+                        <li>
+                            <label for="full_name">Preparatoria</label>
+                            <div class="top-input">
+                                <input type="text" name="school" placeholder="Ingresa tu preparatoria" maxlength="50" required>
+                                <i class="fa-solid fa-school"></i>
+                            </div>
+                            <hr>
+                        </li>
+                        <li>
+                            <label for="email">Correo Electrónico</label>
+                            <div class="top-input">
+                                <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <hr>
+                        </li>
+                        <div class="two-inputs">
+                            <li style="margin-right: .5em;">
+                                <label for="password">Contraseña</label>
+                                <div class="top-input">
+                                    <input type="password" id="password" name="password" minlength="8" placeholder="Crea una contraseña" autocomplete="new-password" required>
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                                <hr>
+                            </li>
+                            <li style="margin-left: .5em;">
+                                <label for="password">Confirmar contraseña</label>
+                                <div class="top-input">
+                                    <input type="password" id="password2" name="passwordConfirm" minlength="8" placeholder="Repite la contraseña" autocomplete="new-password" required>
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                                <hr>
+                            </li>
+                        </div>
+                        <li>
+                            <label for="voucher">Comprobante de Pago</label>
+                            <div class="top-input">
+                                <input type="file" name="voucher" accept="image/*" placeholder="Ingresa tu correo electrónico" required>
+                                <i class="fa-solid fa-file-image"></i>
+                            </div>
+                            <hr>
+                        </li>
+                    </ul>
+                    <p class="errorM">
+                        {% if form.errors %}
+                            {% for field in form %}
+                                {% for error in field.errors %}
+                                    <span class="error-message">{{ error|escape }}</span>
+                                {% endfor %}
+                            {% endfor %}
+                    
+                            {% for error in form.non_field_errors %}
+                                <span class="error-message">{{ error|escape }}</span>
+                            {% endfor %}
+                        {% endif %}
+                    </p>
+                    <button type="submit">Crear Cuenta</button>
+                </form>
+                <div class="no-account">
+                    <span>¿Ya tienes cuenta? </span><span><a href="{% url 'login' %}">Inicia Sesión</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <span><a href="https://www.up.edu.mx/campus-aguascalientes/">UP Aguascalientes</a></span><span><a href="https://movil.up.edu.mx/ags/ingenieria-en-inteligencia-artificial">Website by IIA UP Ags</a></span>
+        </div>
+    </footer>
+</body>
+<!-- JS files -->
+<script src="{% static 'panammun_panel/js/create_account.js' %}"></script>
+<script type="text/javascript">
+    window.csrfToken = "{{ csrf_token }}";
+</script>
+<script>
+    function redirectToHome(){
+        window.location.href = "{% url 'panammun_panel:home' %}";
+    }
+</script>
+
+</html>

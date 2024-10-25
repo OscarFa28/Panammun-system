@@ -1,0 +1,221 @@
+Watching for file changes with StatReloader
+[11/Sep/2024 22:17:43] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01Di\x00\x05\x00\x03\x02h2\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00-\x00\x02\x01\x01\x00')
+[11/Sep/2024 22:17:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:17:43] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sÊÊ\x00\x00\x00+\x00\x07\x06ªª\x03\x04\x03\x03\x00\x17\x00\x00\x00\x12\x00\x00ÿ\x01\x00\x01\x00\x00')
+[11/Sep/2024 22:17:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:17:43] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03£\x04ç\x87\x8büO=ôðSÃ\x00.\x18^\x1bWN\x02(ß\x17è4ÔÐ\x03\x9e\x93\x1bB')
+[11/Sep/2024 22:17:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:17:43] code 400, message Bad request version ('Ê\x96á,\x8bO\x94Æ\x07Ï´YÐ\x15\x17\x00')
+[11/Sep/2024 22:17:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:17:43] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00ÿ\x01\x00\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x12\x00\x00\x003\x04ï\x04í')
+[11/Sep/2024 22:17:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:17:43] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03)!Nû¶}\x9bvÉscÒ}\xadð«>\x8dr\x94ò\x98&\x86\x92ïâBfÚº>')
+[11/Sep/2024 22:17:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+Watching for file changes with StatReloader
+[11/Sep/2024 22:19:33] code 400, message Bad request version ('D\x00\x12R')
+[11/Sep/2024 22:19:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:19:33] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sJJ\x00\x00\x00')
+[11/Sep/2024 22:19:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:19:33] code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93::\x00\x00ÿ\x01\x00\x01\x00Di\x00\x05\x00\x03\x02h2\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+[11/Sep/2024 22:19:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:19:33] code 400, message Bad request version ('Ýð\x8dBC\x00')
+[11/Sep/2024 22:19:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:19:33] code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sºº\x00\x00Di\x00\x05\x00\x03\x02h2\x00')
+[11/Sep/2024 22:19:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:19:33] code 400, message Bad request version ('Ë:²\x9a4\x93zc\x14"h²\x00»\x155^¡\x12ï7»fA\x91ò\x80\x025\x964ZÆ\x8a«kKâÃ(Ï¤#WK{3áE\x80Ò\x9bÜ9sÇ¬®\x9b\x90')
+[11/Sep/2024 22:19:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:19:35] code 400, message Bad request version ('>Z\x9b¥!!p¥&¤Í\x07B[n[v¾yº¾éÊÔ\x17\x00')
+[11/Sep/2024 22:19:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:19:35] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+[11/Sep/2024 22:19:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:19:35] code 400, message Bad request version ('¤9;k\x05=')
+[11/Sep/2024 22:19:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:19:35] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')
+[11/Sep/2024 22:19:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:19:35] code 400, message Bad request version ('\x02h2\x08http/1.1\x00#\x00\x00ÿ\x01\x00\x01\x00\x00')
+[11/Sep/2024 22:19:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+[11/Sep/2024 22:19:35] code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93úú\x00\x00\x00+\x00\x07\x06ªª\x03\x04\x03\x03\x00')
+[11/Sep/2024 22:19:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+Watching for file changes with StatReloader
+[11/Sep/2024 22:21:40] "GET /adminPanel/ HTTP/1.1" 302 0
+[11/Sep/2024 22:21:41] "GET /login/?next=/adminPanel/ HTTP/1.1" 200 3105
+[11/Sep/2024 22:21:41] "GET /static/panammun_panel/css/color_palette.css HTTP/1.1" 200 581
+[11/Sep/2024 22:21:41] "GET /static/panammun_panel/css/login.css HTTP/1.1" 200 4198
+[11/Sep/2024 22:21:41] "GET /static/panammun_panel/svg/icon_panammun.svg HTTP/1.1" 200 7382
+[11/Sep/2024 22:21:41] "GET /static/panammun_panel/js/login.js HTTP/1.1" 200 0
+[11/Sep/2024 22:21:44] "GET /meetUs/ HTTP/1.1" 200 5209
+[11/Sep/2024 22:21:44] "GET /static/panammun_panel/css/meet_us.css HTTP/1.1" 200 4271
+[11/Sep/2024 22:21:44] "GET /static/panammun_panel/img/silueta.png HTTP/1.1" 200 4305
+[11/Sep/2024 22:21:45] "GET /static/panammun_panel/img/about_us_Oscar_F_image.png HTTP/1.1" 200 781543
+[11/Sep/2024 22:21:45] "GET /static/panammun_panel/img/AnaPau.png HTTP/1.1" 200 394196
+[11/Sep/2024 22:21:47] "GET /static/panammun_panel/img/roy_img.png HTTP/1.1" 200 2069197
+[11/Sep/2024 22:21:52] "GET /createAccount/ HTTP/1.1" 200 7561
+[11/Sep/2024 22:21:52] "GET /static/panammun_panel/css/create_account.css HTTP/1.1" 200 4923
+[11/Sep/2024 22:21:52] "GET /static/panammun_panel/js/create_account.js HTTP/1.1" 200 331
+Not Found: /favicon.ico
+[11/Sep/2024 22:21:52] "GET /favicon.ico HTTP/1.1" 404 4978
+[11/Sep/2024 22:27:30] "GET / HTTP/1.1" 200 10513
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/css/owl.theme.default.min.css HTTP/1.1" 404 2063
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/css/style.css HTTP/1.1" 200 12915
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/css/jquery.mCustomScrollbar.min.css HTTP/1.1" 200 42839
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/css/responsive.css HTTP/1.1" 200 8673
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/css/owl.carousel.min.css HTTP/1.1" 200 3248
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/css/bootstrap.min.css HTTP/1.1" 200 140421
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/js/popper.min.js HTTP/1.1" 200 19190
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/js/bootstrap.bundle.min.js HTTP/1.1" 200 70808
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/css/animate.min.css HTTP/1.1" 200 53678
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/js/jquery.min.js HTTP/1.1" 200 87088
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/css/normalize.css HTTP/1.1" 200 7381
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/css/meanmenu.css HTTP/1.1" 200 3842
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/css/slick.css HTTP/1.1" 200 1884
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/css/jquery-ui.css HTTP/1.1" 200 35973
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/css/nice-select.css HTTP/1.1" 200 3653
+[11/Sep/2024 22:27:30] "GET /static/panammun_panel/img/like-icon.png HTTP/1.1" 200 1643
+[11/Sep/2024 22:27:31] "GET /static/panammun_panel/img/header.png HTTP/1.1" 200 149504
+[11/Sep/2024 22:27:31] "GET /static/panammun_panel/img/personas.png HTTP/1.1" 200 301814
+[11/Sep/2024 22:27:31] "GET /static/panammun_panel/img/Logo_PANAMMUN_Oficial_Negro.png HTTP/1.1" 200 228573
+[11/Sep/2024 22:27:31] "GET /static/panammun_panel/img/fast-forword-icon.png HTTP/1.1" 200 1461
+[11/Sep/2024 22:27:31] "GET /static/panammun_panel/img/logo-UP.png HTTP/1.1" 200 17826
+[11/Sep/2024 22:27:31] "GET /static/panammun_panel/img/favicon.png HTTP/1.1" 200 2756
+[11/Sep/2024 22:27:31] "GET /static/panammun_panel/img/fevicon.png HTTP/1.1" 404 2021
+Not Found: /index.html
+[11/Sep/2024 22:27:55] "GET /index.html HTTP/1.1" 404 4975
+Not Found: /favicon.ico
+[11/Sep/2024 22:27:55] "GET /favicon.ico HTTP/1.1" 404 4978
+[11/Sep/2024 22:28:20] "GET /createAccount/ HTTP/1.1" 200 7561
+[11/Sep/2024 22:28:20] "GET /static/panammun_panel/js/create_account.js HTTP/1.1" 200 331
+[11/Sep/2024 22:28:20] "GET /static/panammun_panel/css/color_palette.css HTTP/1.1" 200 581
+[11/Sep/2024 22:28:20] "GET /static/panammun_panel/css/create_account.css HTTP/1.1" 200 4923
+[11/Sep/2024 22:28:20] "GET /static/panammun_panel/svg/icon_panammun.svg HTTP/1.1" 200 7382
+[11/Sep/2024 22:28:32,834] - Broken pipe from ('187.232.144.69', 49848)
+[11/Sep/2024 22:28:32,834] - Broken pipe from ('187.232.144.69', 49857)
+[11/Sep/2024 22:28:32,835] - Broken pipe from ('187.232.144.69', 49858)
+[11/Sep/2024 22:29:24] "GET / HTTP/1.1" 200 10495
+[11/Sep/2024 22:29:34] "GET /createAccount/ HTTP/1.1" 200 7561
+[11/Sep/2024 22:29:35] "GET / HTTP/1.1" 200 10495
+[11/Sep/2024 22:29:36] "GET /static/panammun_panel/css/owl.theme.default.min.css HTTP/1.1" 404 2063
+[11/Sep/2024 22:29:43] "GET /createAccount/ HTTP/1.1" 200 7561
+[11/Sep/2024 22:29:50,965] - Broken pipe from ('187.232.144.69', 49862)
+[11/Sep/2024 22:29:50,966] - Broken pipe from ('187.232.144.69', 49861)
+[11/Sep/2024 22:30:20] "GET /login/ HTTP/1.1" 200 3105
+[11/Sep/2024 22:30:20] "GET /static/panammun_panel/css/login.css HTTP/1.1" 200 4198
+[11/Sep/2024 22:30:20] "GET /static/panammun_panel/js/login.js HTTP/1.1" 200 0
+[11/Sep/2024 22:30:31] "GET / HTTP/1.1" 200 10495
+[11/Sep/2024 22:30:31] "GET /static/panammun_panel/css/owl.theme.default.min.css HTTP/1.1" 404 2063
+[11/Sep/2024 22:30:50,944] - Broken pipe from ('187.232.144.69', 49865)
+[11/Sep/2024 22:48:56] "GET /panel/ HTTP/1.1" 302 0
+[11/Sep/2024 22:48:56] "GET /login/?next=/panel/ HTTP/1.1" 200 3105
+[11/Sep/2024 22:48:56] "GET /static/panammun_panel/css/login.css HTTP/1.1" 304 0
+[11/Sep/2024 22:48:56] "GET /static/panammun_panel/js/login.js HTTP/1.1" 304 0
+[11/Sep/2024 22:48:56] "GET /static/panammun_panel/css/color_palette.css HTTP/1.1" 304 0
+[11/Sep/2024 22:48:56] "GET /static/panammun_panel/svg/icon_panammun.svg HTTP/1.1" 304 0
+[11/Sep/2024 22:49:19,505] - Broken pipe from ('187.232.144.69', 49936)
+[11/Sep/2024 22:49:19,506] - Broken pipe from ('187.232.144.69', 49938)
+[11/Sep/2024 22:49:19,506] - Broken pipe from ('187.232.144.69', 49935)
+[11/Sep/2024 22:49:19,506] - Broken pipe from ('187.232.144.69', 49937)
+[11/Sep/2024 22:50:14] "GET /login/?next=/panel/ HTTP/1.1" 200 3105
+[11/Sep/2024 22:50:18] "GET /static/panammun_panel/css/owl.theme.default.min.css HTTP/1.1" 404 2063
+[12/Sep/2024 10:24:53] "GET / HTTP/1.1" 200 10495
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/css/style.css HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/css/bootstrap.min.css HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/css/responsive.css HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/css/jquery.mCustomScrollbar.min.css HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/css/owl.carousel.min.css HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/css/owl.theme.default.min.css HTTP/1.1" 404 2063
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/img/like-icon.png HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/img/Logo_PANAMMUN_Oficial_Negro.png HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/css/normalize.css HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/css/animate.min.css HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/css/meanmenu.css HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/css/slick.css HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/css/nice-select.css HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/css/jquery-ui.css HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/img/fast-forword-icon.png HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/js/jquery.min.js HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/img/logo-UP.png HTTP/1.1" 304 0
+[12/Sep/2024 10:24:53] "GET /static/panammun_panel/js/popper.min.js HTTP/1.1" 304 0
+[12/Sep/2024 10:24:54] "GET /static/panammun_panel/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[12/Sep/2024 10:24:54] "GET /static/panammun_panel/img/header.png HTTP/1.1" 304 0
+[12/Sep/2024 10:24:54] "GET /static/panammun_panel/img/personas.png HTTP/1.1" 304 0
+[12/Sep/2024 10:24:54] "GET /static/panammun_panel/img/favicon.png HTTP/1.1" 304 0
+[12/Sep/2024 10:24:54] "GET /static/panammun_panel/img/fevicon.png HTTP/1.1" 404 2021
+[12/Sep/2024 10:36:18] code 400, message Bad request version ('Ê÷+¶~')
+[12/Sep/2024 10:36:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 10:36:18] code 400, message Bad request version ('\x00\x02\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06zz\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+[12/Sep/2024 10:36:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 10:36:18] code 400, message Bad request version ('\x02h2\x08http/1.1\x00#\x00\x00\x00+\x00\x07\x06jj\x03\x04\x03\x03\x00\x17\x00\x00\x00')
+[12/Sep/2024 10:36:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 10:36:18] code 400, message Bad request version ('\x87\x08\x7f\x95\x12»L\x17xÀRe\x0eòü®òEnb~\x00\x17\x00\x00Di\x00\x05\x00\x03\x02h2\x00-\x00\x02\x01\x01\x00#\x00\x00ÿ\x01\x00\x01\x00\x00')
+[12/Sep/2024 10:36:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 10:45:31] "GET /panel/ HTTP/1.1" 302 0
+[12/Sep/2024 10:45:31] "GET /login/?next=/panel/ HTTP/1.1" 200 3105
+[12/Sep/2024 10:45:31] "GET /static/panammun_panel/css/color_palette.css HTTP/1.1" 304 0
+[12/Sep/2024 10:45:31] "GET /static/panammun_panel/css/login.css HTTP/1.1" 304 0
+[12/Sep/2024 10:45:31] "GET /static/panammun_panel/svg/icon_panammun.svg HTTP/1.1" 304 0
+[12/Sep/2024 10:45:31] "GET /static/panammun_panel/js/login.js HTTP/1.1" 304 0
+/home/panammun_admin/Panammun_system/Panammun_system/wsgi.py changed, reloading.
+Watching for file changes with StatReloader
+[12/Sep/2024 12:03:36] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+[12/Sep/2024 12:03:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:03:36] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+[12/Sep/2024 12:03:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:03:36] code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+[12/Sep/2024 12:03:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:03:36] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x88úú\x00\x00\x00\x17\x00\x00\x00')
+[12/Sep/2024 12:03:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:03:41] "GET /login/?next=/panel/ HTTP/1.1" 200 3105
+[12/Sep/2024 12:04:06] code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x88úú\x00\x00\x00')
+[12/Sep/2024 12:04:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:06] code 400, message Bad request version ('E¸')
+[12/Sep/2024 12:04:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:06] code 400, message Bad request version ("\x04²ð<ÉVåPõ`BÌ\x91{\x89\x80iÝ\x82xò\x91\x11!(²'¹xÅ¥)5\x18I¾Ò^\x00Ç<hä4ñ\x9b^\x18")
+[12/Sep/2024 12:04:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:06] code 400, message Bad request version ('l\x9a\x0f\xad\x19#\x95Ì\x04\x90\x87³¶È\x1b5\x89wë\x14-Þg¶/ÊW«é\x96r×\x81{TÉÝ"$®Á\x128Âh-¸q\x116+à\x11')
+[12/Sep/2024 12:04:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:33] code 400, message Bad request version ('I¡><Ûþî\x86Ì\x0eóßSßÕ¬ês%Ûoà®\x19¦Ë\x00+\x00\x07\x06')
+[12/Sep/2024 12:04:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:33] code 400, message Bad request syntax ('\x16\x03\x01\x06Õ\x01\x00\x06Ñ\x03\x03\x9d')
+[12/Sep/2024 12:04:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:33] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06õ\x01\x00\x06ñ\x03\x03ªÖ"×F\x13Ú\x1a,RÍ')
+[12/Sep/2024 12:04:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:33] code 400, message Bad request version ('£RS9\x93Fl\x14.@2K"Ççì\x86öCO\x9f\x94u¸p\x9eD\x93y~*\x98È\x9c@\x96ó5µ\x02\x8a\x92')
+[12/Sep/2024 12:04:33] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:36] code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+[12/Sep/2024 12:04:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:36] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x88')
+[12/Sep/2024 12:04:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:36] code 400, message Bad request version ('òpZy/q@N\x8b\x88ë\x830Pþ\x1azXsä§\x94åùf«1Ò¨>Èi\x00#\x00\x00\x00+\x00\x07\x06\x1a\x1a\x03\x04\x03\x03\x00')
+[12/Sep/2024 12:04:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:36] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+[12/Sep/2024 12:04:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:38] code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Hêê\x00\x00\x00')
+[12/Sep/2024 12:04:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:38] code 400, message Bad request version ('\x13qVFi\x86')
+[12/Sep/2024 12:04:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:38] code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06hZZ\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x05\x00\x05\x01\x00\x00\x00\x00ÿ\x01\x00\x01\x00\x00')
+[12/Sep/2024 12:04:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:04:38] code 400, message Bad request version ('Ñ')
+[12/Sep/2024 12:04:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+[12/Sep/2024 12:07:24] "GET / HTTP/1.1" 200 10487
+[12/Sep/2024 12:07:24] "GET /static/panammun_panel/css/bootstrap.min.css HTTP/1.1" 304 0
+[12/Sep/2024 12:07:24] "GET /static/panammun_panel/css/style.css HTTP/1.1" 304 0
+[12/Sep/2024 12:07:24] "GET /static/panammun_panel/css/responsive.css HTTP/1.1" 304 0
+[12/Sep/2024 12:07:24] "GET /static/panammun_panel/css/jquery.mCustomScrollbar.min.css HTTP/1.1" 304 0
+[12/Sep/2024 12:07:24] "GET /static/panammun_panel/css/owl.carousel.min.css HTTP/1.1" 304 0
+[12/Sep/2024 12:07:24] "GET /static/panammun_panel/css/owl.theme.default.min.css HTTP/1.1" 404 2063
+[12/Sep/2024 12:07:24] "GET /static/panammun_panel/img/Logo_PANAMMUN_Oficial_Negro.png HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/img/like-icon.png HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/img/fast-forword-icon.png HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/css/animate.min.css HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/css/normalize.css HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/css/meanmenu.css HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/css/slick.css HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/css/jquery-ui.css HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/css/nice-select.css HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/js/jquery.min.js HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/img/logo-UP.png HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/js/popper.min.js HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/img/header.png HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/img/personas.png HTTP/1.1" 304 0
+[12/Sep/2024 12:07:25] "GET /static/panammun_panel/img/favicon.png HTTP/1.1" 304 0

@@ -1,0 +1,205 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(28,28,28); /* Color de fondo de respaldo */
+    background: -moz-linear-gradient(180deg, rgba(28,28,28,1) 0%, rgba(161,32,63,1) 80%);
+    background: -webkit-linear-gradient(180deg, rgba(28,28,28,1) 0%, rgba(161,32,63,1) 80%);
+    background: linear-gradient(180deg, rgba(28,28,28,1) 0%, rgba(161,32,63,1) 80%);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c1c1c",endColorstr="#a1203f",GradientType=1);
+    padding: 0;
+    margin: 0;
+    font-family: 'Expletus Sans', sans-serif;
+    color: var(--text-100);
+}
+button{
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary-100);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-300);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent-100);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--accent-100);
+}
+
+.title-page{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5em;
+}
+.title-page h1{
+    margin: 0;
+    margin-top: .3em;
+    padding: 0;
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--primary-100);
+}
+.login-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+}
+.panel{
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--accent-100) !important;
+    padding: 1.5em 3em;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 25%;
+}
+.logo-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.login-panel img{
+    width: 8em;
+}
+.text-panel{
+    color: var(--accent-100) !important;
+    margin-bottom: 2em;
+}
+.text-panel h2{
+    margin: 0;
+    padding: 0;
+}
+.main-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.main-panel form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main-panel ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.main-panel li{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 3em;
+}
+.top-input{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .2em;
+}
+.main-panel li label{
+    font-weight: 600;
+    margin-bottom: .3em;
+    font-size: 1.1em;
+}
+.main-panel li input{
+    background-color: transparent;
+    border: none;
+    color: var(--bg-100);
+    font-size: 1em;
+    flex: 1;
+}
+.main-panel li input:focus {
+    outline: none; /* Elimina el borde por defecto en el enfoque */
+}
+.top-input i{
+    font-size: 1.2em;
+}
+.main-panel li hr{
+    border: 1.5px solid var(--accent-100);
+    border-radius: 1em;
+    width: 100%;
+    margin-top: .1em;
+}
+.main-panel button{
+    padding: .4em;
+    border: 2px solid var(--accent-100);
+    background-color: transparent;
+    border-radius: .5em;
+    font-weight: 600;
+    color: var(--accent-100);
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    transition: .5s;
+}
+.main-panel button:hover{
+    color: var(--primary-100);
+    border-color: var(--primary-100);
+}
+.no-account a{
+    text-decoration: none;
+    color: var(--primary-100);
+    font-weight: 600;
+    transition: .5s;
+}
+.no-account a:hover{
+    color: var(--accent-100);
+}
+.errorM{
+    color: var(--primary-100);
+    text-align: center;
+    font-size: .8em;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    width: 100%;
+}
+footer span a{
+    text-decoration: none;
+    color: var(--accent-100);
+    font-weight: 600;
+    transition: .5s;
+    padding: 0 1em;
+}
+footer span a:hover{
+    color: var(--primary-100);
+}
+
+@media only screen and (max-width: 768px) {
+    .title-page h1{
+        margin-top: 1.5em;
+    }
+    .panel{
+        width: 100%;
+        border-radius: 0;
+        padding: 3em;
+    }
+    footer{
+        padding: 1em 0;
+    }
+    
+}

@@ -1,0 +1,5 @@
+MYSQL = {
+    'default': {
+        ##hidden info
+    }
+}

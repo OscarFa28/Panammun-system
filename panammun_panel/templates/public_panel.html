@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- CSS files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'panammun_panel/css/color_palette.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'panammun_panel/css/public_panel.css' %}">
+    <!-- Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+    </style>
+    <!-- Íconos-->
+    <script src="https://kit.fontawesome.com/c986eafe9b.js" crossorigin="anonymous"></script>
+    <!-- Ícono -->
+    <link rel="icon" type="image/png" href="{% static 'panammun_panel/svg/icon_panammun.svg' %}">
+</head>
+<body>
+    <header class="main-title">
+        <img src="{% static 'panammun_panel/svg/icon_panammun.svg' %}" alt="">
+        <h1>{{ edition.name }}</h1>
+        <a href="#" onclick="document.getElementById('logout-form').submit();" title="Cerrar Sesión">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </a>
+        <form id="logout-form" method="post" action="{% url 'logout' %}" style="display: none;">
+            {% csrf_token %}
+        </form>
+    </header>
+    <section class="main-user-content">
+        <span class="welcome-user">Bienvenido {{ user.username }} <span>Inicio: {{ edition.start_mun_date }}</span></span>
+        {% if user.account_type == 'administrator' %}
+            <button onclick="redirectToAdmin()" class="access-admin">Acceder a Administración</button>
+        {% else %}
+            <hr>
+            
+            <!-- Verificar si el usuario está verificado -->
+            {% if user.verified %}
+                
+                <!-- Verificar si es la fecha para elegir -->
+                {% if date %}
+                    <!-- Verificar si el user.country está vacío y mostrar la lista de comités -->
+                    {% if not user.country %}
+                        <ul class="committees">
+                            {% for committee, countries in committees_with_countries.items %}
+                                <div class="top-info">
+                                    <h3>{{ committee.name }} <span class="lan">{{ committee.language }}</span></h3>
+                                </div>
+                                <ul>
+                                    {% for country in countries %}
+                                        <li onclick="selectCountry('{{ country.name }}', '{{ committee.name }}', '{{ country.id }}')">
+                                            {{ country.name }} <i class="fa-solid fa-circle-check"></i>
+                                        </li>
+                                    {% empty %}
+                                        <li>Ninguno disponible</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <!-- Mensaje si el país ya ha sido seleccionado -->
+                        <h3>Ya has seleccionado {{ user.country.name }}.</h3>
+                    {% endif %}
+                
+                {% else %}
+                    <!-- Si aún no es la fecha para elegir -->
+                    <h3>No es momento de elegir. La fecha de elección empieza en {{ edition.start_choose_date }} y termina en {{ edition.start_mun_date }}</h3>
+                {% endif %}
+            
+            {% else %}
+                <!-- Si el usuario no está verificado -->
+                <h3>Tu pago aún no ha sido verificado.</h3>
+            {% endif %}
+        {% endif %}
+    </section>   
+    <footer>
+        <span><a href="https://www.up.edu.mx/campus-aguascalientes/">UP Aguascalientes</a></span><span><a href="https://movil.up.edu.mx/ags/ingenieria-en-inteligencia-artificial">Website by IIA UP Ags</a></span>
+    </footer>
+
+</body>
+<!-- JS files -->
+<script src="{% static 'panammun_panel/js/public_panel.js' %}"></script>
+<script type="text/javascript">
+    window.csrfToken = "{{ csrf_token }}";
+</script>
+<script>
+    function redirectToAdmin(){
+        window.location.href = "{% url 'panammun_panel:admin-panel' %}";
+    }
+</script>
+</html>

@@ -1,0 +1,659 @@
+[2024-09-12 17:44:53 +0000] [27999] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-apolo.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/panammun_admin/Panammun_system
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1001
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/panammun_admin/Panammun_system/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: Panammun_system
+  default_proc_name: Panammun_system.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f5dc6ba1900>
+  on_reload: <function OnReload.on_reload at 0x7f5dc6ba1a20>
+  when_ready: <function WhenReady.when_ready at 0x7f5dc6ba1b40>
+  pre_fork: <function Prefork.pre_fork at 0x7f5dc6ba1c60>
+  post_fork: <function Postfork.post_fork at 0x7f5dc6ba1d80>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f5dc6ba1ea0>
+  worker_int: <function WorkerInt.worker_int at 0x7f5dc6ba1fc0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f5dc6ba20e0>
+  pre_exec: <function PreExec.pre_exec at 0x7f5dc6ba2200>
+  pre_request: <function PreRequest.pre_request at 0x7f5dc6ba2320>
+  post_request: <function PostRequest.post_request at 0x7f5dc6ba23b0>
+  child_exit: <function ChildExit.child_exit at 0x7f5dc6ba24d0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f5dc6ba25f0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f5dc6ba2710>
+  on_exit: <function OnExit.on_exit at 0x7f5dc6ba2830>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f5dc6ba2950>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2024-09-12 17:44:53 +0000] [27999] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 17:44:53 +0000] [27999] [DEBUG] Arbiter booted
+[2024-09-12 17:44:53 +0000] [27999] [INFO] Listening at: unix:/tmp/gunicorn-apolo.sock (27999)
+[2024-09-12 17:44:53 +0000] [27999] [INFO] Using worker: sync
+[2024-09-12 17:44:53 +0000] [28004] [INFO] Booting worker with pid: 28004
+[2024-09-12 17:44:53 +0000] [28005] [INFO] Booting worker with pid: 28005
+[2024-09-12 17:44:53 +0000] [28006] [INFO] Booting worker with pid: 28006
+[2024-09-12 17:44:53 +0000] [28007] [INFO] Booting worker with pid: 28007
+[2024-09-12 17:44:53 +0000] [28008] [INFO] Booting worker with pid: 28008
+[2024-09-12 17:44:53 +0000] [27999] [DEBUG] 5 workers
+[2024-09-12 17:45:04 +0000] [27999] [INFO] Handling signal: int
+[2024-09-12 11:45:05 -0600] [28004] [INFO] Worker exiting (pid: 28004)
+[2024-09-12 11:45:05 -0600] [28006] [INFO] Worker exiting (pid: 28006)
+[2024-09-12 11:45:05 -0600] [28007] [INFO] Worker exiting (pid: 28007)
+[2024-09-12 11:45:05 -0600] [28005] [INFO] Worker exiting (pid: 28005)
+[2024-09-12 11:45:05 -0600] [28008] [INFO] Worker exiting (pid: 28008)
+[2024-09-12 17:45:05 +0000] [27999] [INFO] Shutting down: Master
+[2024-09-12 18:37:50 +0000] [31110] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-apolo.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/panammun_admin/Panammun_system
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1001
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/panammun_admin/Panammun_system/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: Panammun_system
+  default_proc_name: Panammun_system.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f71583e5900>
+  on_reload: <function OnReload.on_reload at 0x7f71583e5a20>
+  when_ready: <function WhenReady.when_ready at 0x7f71583e5b40>
+  pre_fork: <function Prefork.pre_fork at 0x7f71583e5c60>
+  post_fork: <function Postfork.post_fork at 0x7f71583e5d80>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f71583e5ea0>
+  worker_int: <function WorkerInt.worker_int at 0x7f71583e5fc0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f71583e60e0>
+  pre_exec: <function PreExec.pre_exec at 0x7f71583e6200>
+  pre_request: <function PreRequest.pre_request at 0x7f71583e6320>
+  post_request: <function PostRequest.post_request at 0x7f71583e63b0>
+  child_exit: <function ChildExit.child_exit at 0x7f71583e64d0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f71583e65f0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f71583e6710>
+  on_exit: <function OnExit.on_exit at 0x7f71583e6830>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f71583e6950>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2024-09-12 18:37:50 +0000] [31110] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 18:37:50 +0000] [31110] [DEBUG] Arbiter booted
+[2024-09-12 18:37:50 +0000] [31110] [INFO] Listening at: unix:/tmp/gunicorn-apolo.sock (31110)
+[2024-09-12 18:37:50 +0000] [31110] [INFO] Using worker: sync
+[2024-09-12 18:37:50 +0000] [31115] [INFO] Booting worker with pid: 31115
+[2024-09-12 18:37:51 +0000] [31116] [INFO] Booting worker with pid: 31116
+[2024-09-12 18:37:51 +0000] [31117] [INFO] Booting worker with pid: 31117
+[2024-09-12 18:37:51 +0000] [31118] [INFO] Booting worker with pid: 31118
+[2024-09-12 18:37:51 +0000] [31119] [INFO] Booting worker with pid: 31119
+[2024-09-12 18:37:51 +0000] [31110] [DEBUG] 5 workers
+[2024-09-12 19:05:49 +0000] [33146] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-Panammun_system.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/panammun_admin/Panammun_system
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1001
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/panammun_admin/Panammun_system/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: Panammun_system
+  default_proc_name: Panammun_system.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f9eac755900>
+  on_reload: <function OnReload.on_reload at 0x7f9eac755a20>
+  when_ready: <function WhenReady.when_ready at 0x7f9eac755b40>
+  pre_fork: <function Prefork.pre_fork at 0x7f9eac755c60>
+  post_fork: <function Postfork.post_fork at 0x7f9eac755d80>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f9eac755ea0>
+  worker_int: <function WorkerInt.worker_int at 0x7f9eac755fc0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f9eac7560e0>
+  pre_exec: <function PreExec.pre_exec at 0x7f9eac756200>
+  pre_request: <function PreRequest.pre_request at 0x7f9eac756320>
+  post_request: <function PostRequest.post_request at 0x7f9eac7563b0>
+  child_exit: <function ChildExit.child_exit at 0x7f9eac7564d0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f9eac7565f0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f9eac756710>
+  on_exit: <function OnExit.on_exit at 0x7f9eac756830>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f9eac756950>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2024-09-12 19:05:49 +0000] [33146] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 19:05:49 +0000] [33146] [DEBUG] Arbiter booted
+[2024-09-12 19:05:49 +0000] [33146] [INFO] Listening at: unix:/tmp/gunicorn-Panammun_system.sock (33146)
+[2024-09-12 19:05:49 +0000] [33146] [INFO] Using worker: sync
+[2024-09-12 19:05:49 +0000] [33151] [INFO] Booting worker with pid: 33151
+[2024-09-12 19:05:49 +0000] [33152] [INFO] Booting worker with pid: 33152
+[2024-09-12 19:05:49 +0000] [33153] [INFO] Booting worker with pid: 33153
+[2024-09-12 19:05:49 +0000] [33154] [INFO] Booting worker with pid: 33154
+[2024-09-12 19:05:49 +0000] [33146] [DEBUG] 5 workers
+[2024-09-12 19:05:49 +0000] [33155] [INFO] Booting worker with pid: 33155
+[2024-09-12 19:05:54 +0000] [33146] [INFO] Handling signal: int
+[2024-09-12 13:05:54 -0600] [33153] [INFO] Worker exiting (pid: 33153)
+[2024-09-12 13:05:54 -0600] [33151] [INFO] Worker exiting (pid: 33151)
+[2024-09-12 13:05:54 -0600] [33152] [INFO] Worker exiting (pid: 33152)
+[2024-09-12 13:05:54 -0600] [33154] [INFO] Worker exiting (pid: 33154)
+[2024-09-12 13:05:54 -0600] [33155] [INFO] Worker exiting (pid: 33155)
+[2024-09-12 19:05:55 +0000] [33146] [INFO] Shutting down: Master
+[2024-09-12 19:10:34 +0000] [33432] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-Panammun_system.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/panammun_admin/Panammun_system
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1001
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/panammun_admin/Panammun_system/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: Panammun_system
+  default_proc_name: Panammun_system.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f9244e69900>
+  on_reload: <function OnReload.on_reload at 0x7f9244e69a20>
+  when_ready: <function WhenReady.when_ready at 0x7f9244e69b40>
+  pre_fork: <function Prefork.pre_fork at 0x7f9244e69c60>
+  post_fork: <function Postfork.post_fork at 0x7f9244e69d80>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f9244e69ea0>
+  worker_int: <function WorkerInt.worker_int at 0x7f9244e69fc0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f9244e6a0e0>
+  pre_exec: <function PreExec.pre_exec at 0x7f9244e6a200>
+  pre_request: <function PreRequest.pre_request at 0x7f9244e6a320>
+  post_request: <function PostRequest.post_request at 0x7f9244e6a3b0>
+  child_exit: <function ChildExit.child_exit at 0x7f9244e6a4d0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f9244e6a5f0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f9244e6a710>
+  on_exit: <function OnExit.on_exit at 0x7f9244e6a830>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f9244e6a950>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2024-09-12 19:10:34 +0000] [33432] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 19:10:34 +0000] [33432] [DEBUG] Arbiter booted
+[2024-09-12 19:10:34 +0000] [33432] [INFO] Listening at: unix:/tmp/gunicorn-Panammun_system.sock (33432)
+[2024-09-12 19:10:34 +0000] [33432] [INFO] Using worker: sync
+[2024-09-12 19:10:34 +0000] [33437] [INFO] Booting worker with pid: 33437
+[2024-09-12 19:10:34 +0000] [33438] [INFO] Booting worker with pid: 33438
+[2024-09-12 19:10:34 +0000] [33439] [INFO] Booting worker with pid: 33439
+[2024-09-12 19:10:34 +0000] [33440] [INFO] Booting worker with pid: 33440
+[2024-09-12 19:10:34 +0000] [33441] [INFO] Booting worker with pid: 33441
+[2024-09-12 19:10:34 +0000] [33432] [DEBUG] 5 workers
+[2024-09-12 19:10:38 +0000] [33432] [INFO] Handling signal: int
+[2024-09-12 13:10:38 -0600] [33437] [INFO] Worker exiting (pid: 33437)
+[2024-09-12 13:10:38 -0600] [33438] [INFO] Worker exiting (pid: 33438)
+[2024-09-12 13:10:38 -0600] [33439] [INFO] Worker exiting (pid: 33439)
+[2024-09-12 13:10:38 -0600] [33440] [INFO] Worker exiting (pid: 33440)
+[2024-09-12 13:10:38 -0600] [33441] [INFO] Worker exiting (pid: 33441)
+[2024-09-12 19:10:39 +0000] [33432] [INFO] Shutting down: Master
+[2024-09-12 19:11:40 +0000] [33613] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-Panammun_system.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/panammun_admin/Panammun_system
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1001
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/panammun_admin/Panammun_system/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: Panammun_system
+  default_proc_name: Panammun_system.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f7607b81900>
+  on_reload: <function OnReload.on_reload at 0x7f7607b81a20>
+  when_ready: <function WhenReady.when_ready at 0x7f7607b81b40>
+  pre_fork: <function Prefork.pre_fork at 0x7f7607b81c60>
+  post_fork: <function Postfork.post_fork at 0x7f7607b81d80>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f7607b81ea0>
+  worker_int: <function WorkerInt.worker_int at 0x7f7607b81fc0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f7607b820e0>
+  pre_exec: <function PreExec.pre_exec at 0x7f7607b82200>
+  pre_request: <function PreRequest.pre_request at 0x7f7607b82320>
+  post_request: <function PostRequest.post_request at 0x7f7607b823b0>
+  child_exit: <function ChildExit.child_exit at 0x7f7607b824d0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f7607b825f0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f7607b82710>
+  on_exit: <function OnExit.on_exit at 0x7f7607b82830>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f7607b82950>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2024-09-12 19:11:40 +0000] [33613] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 19:11:40 +0000] [33613] [DEBUG] Arbiter booted
+[2024-09-12 19:11:40 +0000] [33613] [INFO] Listening at: unix:/tmp/gunicorn-Panammun_system.sock (33613)
+[2024-09-12 19:11:40 +0000] [33613] [INFO] Using worker: sync
+[2024-09-12 19:11:40 +0000] [33618] [INFO] Booting worker with pid: 33618
+[2024-09-12 19:11:40 +0000] [33619] [INFO] Booting worker with pid: 33619
+[2024-09-12 19:11:40 +0000] [33620] [INFO] Booting worker with pid: 33620
+[2024-09-12 19:11:40 +0000] [33621] [INFO] Booting worker with pid: 33621
+[2024-09-12 19:11:40 +0000] [33622] [INFO] Booting worker with pid: 33622
+[2024-09-12 19:11:40 +0000] [33613] [DEBUG] 5 workers
+[2024-09-12 19:12:06 +0000] [33613] [INFO] Handling signal: int
+[2024-09-12 13:12:07 -0600] [33620] [INFO] Worker exiting (pid: 33620)
+[2024-09-12 13:12:07 -0600] [33618] [INFO] Worker exiting (pid: 33618)
+[2024-09-12 13:12:07 -0600] [33621] [INFO] Worker exiting (pid: 33621)
+[2024-09-12 13:12:07 -0600] [33622] [INFO] Worker exiting (pid: 33622)
+[2024-09-12 13:12:07 -0600] [33619] [INFO] Worker exiting (pid: 33619)
+[2024-09-12 19:12:07 +0000] [33613] [INFO] Shutting down: Master
+[2024-09-12 19:17:45 +0000] [34236] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-Panammun_system.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/panammun_admin/Panammun_system
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1001
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/panammun_admin/Panammun_system/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: Panammun_system
+  default_proc_name: Panammun_system.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f7fc048d900>
+  on_reload: <function OnReload.on_reload at 0x7f7fc048da20>
+  when_ready: <function WhenReady.when_ready at 0x7f7fc048db40>
+  pre_fork: <function Prefork.pre_fork at 0x7f7fc048dc60>
+  post_fork: <function Postfork.post_fork at 0x7f7fc048dd80>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f7fc048dea0>
+  worker_int: <function WorkerInt.worker_int at 0x7f7fc048dfc0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f7fc048e0e0>
+  pre_exec: <function PreExec.pre_exec at 0x7f7fc048e200>
+  pre_request: <function PreRequest.pre_request at 0x7f7fc048e320>
+  post_request: <function PostRequest.post_request at 0x7f7fc048e3b0>
+  child_exit: <function ChildExit.child_exit at 0x7f7fc048e4d0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f7fc048e5f0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f7fc048e710>
+  on_exit: <function OnExit.on_exit at 0x7f7fc048e830>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f7fc048e950>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2024-09-12 19:17:45 +0000] [34236] [INFO] Starting gunicorn 23.0.0
+[2024-09-12 19:17:45 +0000] [34236] [DEBUG] Arbiter booted
+[2024-09-12 19:17:45 +0000] [34236] [INFO] Listening at: unix:/tmp/gunicorn-Panammun_system.sock (34236)
+[2024-09-12 19:17:45 +0000] [34236] [INFO] Using worker: sync
+[2024-09-12 19:17:45 +0000] [34241] [INFO] Booting worker with pid: 34241
+[2024-09-12 19:17:45 +0000] [34242] [INFO] Booting worker with pid: 34242
+[2024-09-12 19:17:45 +0000] [34243] [INFO] Booting worker with pid: 34243
+[2024-09-12 19:17:45 +0000] [34244] [INFO] Booting worker with pid: 34244
+[2024-09-12 19:17:45 +0000] [34245] [INFO] Booting worker with pid: 34245
+[2024-09-12 19:17:45 +0000] [34236] [DEBUG] 5 workers
+[2024-09-12 19:17:52 +0000] [34236] [INFO] Handling signal: int
+[2024-09-12 13:17:52 -0600] [34242] [INFO] Worker exiting (pid: 34242)
+[2024-09-12 13:17:52 -0600] [34244] [INFO] Worker exiting (pid: 34244)
+[2024-09-12 13:17:52 -0600] [34243] [INFO] Worker exiting (pid: 34243)
+[2024-09-12 13:17:53 -0600] [34241] [INFO] Worker exiting (pid: 34241)
+[2024-09-12 13:17:53 -0600] [34245] [INFO] Worker exiting (pid: 34245)
+[2024-09-12 19:17:53 +0000] [34236] [INFO] Shutting down: Master

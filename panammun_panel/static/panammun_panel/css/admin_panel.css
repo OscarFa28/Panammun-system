@@ -1,0 +1,201 @@
+body {
+    background: var(--neutral-100);
+    padding: 0 5%;
+    margin: 0;
+    font-family: 'Expletus Sans', sans-serif;
+    color: var(--bg-100);
+}
+button{
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--neutral-100);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--text-200);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-100);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--primary-100);
+}
+.main-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-title h1{
+    margin-top: 0em;
+    color: var(--primary-100);
+}
+.main-title a{
+    text-decoration: none;
+    color: var(--primary-100);
+    font-size: 1.7em;
+    transition: .5s;
+}
+.main-title a:hover{
+    color: var(--accent-100);
+}
+.main-info{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 6em;
+}
+.info-sections{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--bg-300);
+}
+.title-section{
+    color: var(--accent-100);
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.approve-users-list, .main-users-list{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.approve, .distribution{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.approve ul{
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    max-height: 20em;
+    overflow-y: auto;
+}
+.approve li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--neutral-200);
+    margin-bottom: .3em;
+    width: 98%;
+    padding: .3em;
+    color: var(--bg-300);
+    border-radius: .5em;
+    transition: .3s;
+}
+.approve li:hover{
+    color: var(--bg-200);
+}
+.extra-inf{
+    font-size: .9em;
+}
+.approve h3, .distribution h3{
+    margin: 0;
+    color: var(--primary-100);
+    font-size: 1.5em;
+}
+.approve form{
+    width: 15%;
+    display: flex;
+    justify-content: end;
+}
+.show-voucher{
+    padding: .3em;
+    background-color: transparent;
+    color: var(--primary-100);
+    border: 2px solid var(--primary-100);
+    font-weight: 600;
+    margin-right: .5em;
+    border-radius: .5em;
+    transition: .3s;
+}
+.show-voucher:hover{
+    background-color: var(--primary-100);
+    color: var(--neutral-100);
+}
+.approve select{
+    background-color: transparent;
+    color: var(--accent-100);
+    border-color: var(--accent-100);
+    font-weight: 600;
+    margin-right: .5em;
+    border-radius: .5em;
+}
+.update-button{
+    background-color: var(--accent-100);
+    color: var(--neutral-200);
+    font-weight: 600;
+    border-radius: .5em;
+    border: 2px solid var(--accent-100);
+    transition: .3s;
+}
+.update-button:hover{
+    background-color: transparent;
+    color: var(--accent-100);
+}
+.distribution{
+    max-height: 45em;
+    overflow-y: auto;
+}
+.distribution ul{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-200);
+    list-style: none;
+    width: 98%;
+    padding: .5em;
+    border-radius: .5em;
+}
+.distribution h5{
+    margin-top: 0;
+    color: var(--accent-100);
+    font-size: 1.1em;
+}
+.distribution li{
+    padding: .3em;
+    margin-left: 2em;
+    color: var(--bg-300);
+    border-bottom: 1px solid var(--bg-300);
+    display: flex;
+    justify-content: space-between;
+    transition: .3s;
+}
+.distribution li:hover{
+    color: var(--bg-200);
+}
+.country{
+    font-weight: 600;
+    color: var(--accent-100);
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 2em;
+    margin-top: 3em;
+}
+footer span a{
+    text-decoration: none;
+    color: var(--accent-100);
+    font-weight: 600;
+    transition: .5s;
+}
+footer span a:hover{
+    color: var(--primary-100);
+}
